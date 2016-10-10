@@ -1,0 +1,25 @@
+<div class="thumbnail">
+<table class="table table-striped">
+    <tr>
+        <td colspan="2" align="right"><a href="#!/eleves/modifier/{{eleve._id}}" class="modif">
+            <span class="glyphicon glyphicon-pencil"> </span>
+        </a></td>
+    </tr>
+    <tr>
+        <th>Nom</th> <td>{{eleve.nom|uppercase}}</td>
+    </tr>
+    <tr>
+        <th>Prénom</th> <td>{{eleve.prenom}}</td>
+    </tr>
+    <tr>
+        <th>Adresse</th> <td>{{eleve.adresse}}</td>
+    </tr>
+    <tr>
+        <th colspan="2">Contacts</th> 
+    </tr>
+    <tr>
+        <td>{{eleve.email}}</td> <td>{{eleve.tel}}</td>
+    </tr>
+</table>
+
+</div>

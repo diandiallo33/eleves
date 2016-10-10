@@ -1,0 +1,43 @@
+ <div class="thumbnail">
+     <form name="formModif"  novalidate>
+        <table class="table">
+        <tr>
+            <th>Nom</th> <td> <input type="text" ng-model="eleve.nom" required="" /> </td>
+        </tr>
+        <tr>
+            <th>Prénom</th> <td> <input type="text" ng-model="eleve.prenom" required=""/> </td>
+        </tr>
+        <tr>
+            <th>Adresse</th> <td> <input type="text" ng-model="eleve.adresse" required=""/> </td>
+        </tr>
+        <tr>
+            <th colspan="2">Contacts</th>
+        </tr>
+        <tr>
+            <td>
+                <input type="email" name="mail" ng-model="eleve.email" required="" placeholder="E-mail"/> <br/>
+                <span style="color:red" ng-show="formModif.mail.$dirty && formModif.mail.$invalid">
+                  <span ng-show="formModif.mail.$error.email">E-mail non valide.</span>
+                </span>
+            </td>
+            <td> <input type="number" ng-model="eleve.tel" required="" placeholder="Téléphone"/> </td>
+        </tr>
+        <tr>
+            <td><button ng-click="annuler()" class="btn">Annuler</button> </td>
+            <td>
+                <button  class="btn" confirm-modif="" ng-disabled="formModif.$invalid">Valider</button>
+                <div class="boiteModif thumbnail">
+                    <h3>Confirmation:</h3>
+
+                    <h3>Voulez-vous Modifier?</h3> <hr/>
+
+                    <button ng-click="modifier(eleve)" class="btn oui">Oui</button>
+                    <button ng-click="" class="btn non">Non</button>
+                </div>
+            </td>
+        </tr>
+        </table>
+    </form> 
+</div>
+
+ <div class="bloquer"></div>

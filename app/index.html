@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="appEleves" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My AngularJS App</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+
+  <link rel="stylesheet" href="app.css">
+
+</head>
+<body>
+    
+    
+    <div class="container">
+        
+       <div class="row">
+        
+           <div class="col-md-12 jumbotron" >
+               <h4> NETICOA Sénégal</h4>
+           </div>
+           
+       </div> 
+        
+       <div class="row">
+           
+        <div class="col-md-5 thumbnail" >
+
+            <liste-eleves> </liste-eleves>            
+        </div> 
+        
+         <div class="col-md-7" >
+             <div ng-view> </div>
+          
+         </div>
+           
+       </div> 
+        
+    </div> 
+ 
+
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+
+
+  
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+   <script src="app.js"></script>
+
+    <script src="core/core.module.js"></script>
+    <script src="core/eleve/eleve.module.js"></script>
+    <script src="core/eleve/eleve.service.js"></script>
+    <script src="liste-eleves/liste-eleves.module.js"></script>
+    <script src="liste-eleves/liste-eleves.component.js"></script>
+    <script src="detail-eleves/detail-eleve.module.js"></script>
+    <script src="detail-eleves/detail-eleve.component.js"></script>
+    <script src="ajouter-eleve/ajouter-eleve.module.js"></script>
+    <script src="ajouter-eleve/ajouter-eleve.component.js"></script>
+    <script src="modifier-eleve/modifier-eleve.module.js"></script>
+    <script src="modifier-eleve/modifier-eleve.component.js"></script>
+    <script src="supprimer-eleve/supprimer-eleve.module.js"></script>
+    <script src="supprimer-eleve/supprimer-eleve.component.js"></script>
+  <script src="components/version/version.js"></script>
+  <script src="components/version/version-directive.js"></script>
+  <script src="components/version/interpolate-filter.js"></script>
+</body>
+</html>

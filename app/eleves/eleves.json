@@ -1,0 +1,42 @@
+[
+   {
+        "email": "diop@eleve.com", 
+        "nom": "Diop", 
+        "prenom": "Moussa", 
+        "adresse": "Pikine",
+        "tel": 77010203
+    },
+    
+    {
+        "email": "faye@eleve.com", 
+        "nom": "Faye", 
+        "prenom": "Abdoul", 
+        "adresse": "Pikine",
+        "tel": 77110203
+    },
+    
+    {
+        "email": "sy@eleve.com", 
+        "nom": "Sy", 
+        "prenom": "Laye", 
+        "adresse": "Castor",
+        "tel": 77211203
+    },
+    
+      {
+        "email": "sall@eleve.com", 
+        "nom": "Sall", 
+        "prenom": "Malick", 
+        "adresse": "HLM5",
+        "tel": 772113658
+     },
+     
+     {
+        "email": "seck@eleve.com", 
+        "nom": "Seck", 
+        "prenom": "Ibrahima", 
+        "adresse": "Mariste",
+        "tel": 772563698
+     }
+    
+]
